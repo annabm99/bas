@@ -1,0 +1,43 @@
+<!--Inherit base template-->
+{% extends "base.html" %}
+{% block title %}
+Register Page
+{% endblock %}
+
+{% block content %}
+<h1 class="text-left">Clustal Omega</h1>
+<body class="text-center">
+    <!--class container so the objects do not fill the whole screen-->
+    <div class = "container">
+        <!--method to post because users can provide information through this. Enctype allows file upload-->
+        <form method="POST" class="form-register" style="color:black" enctype="multipart/form-data" >
+            <!--Protect information from the form when it is being sent-->
+            {{ form.hidden_tag() }}
+            <!--Add logo image-->
+            <img class="mb-4" src="assets/clustal.png" alt="">
+            <!--Form header-->
+            <h2 class="h3 mb-3 font-weight-normal">
+                Please provide the sequences you wish to analyze
+            </h2>
+            <br>
+            <!--Fields of the form-->
+            {{ form.sequences.label() }}
+            <!--We can put HTML code inside the curly brackets (make dispay nicer)-->
+            <!--Place holder is what is written insde the input box before you write on it-->
+            {{ form.sequences(class="form-control", placeholder="Paste FASTA sequences") }}
+            
+            {{ form.ids.label() }}
+            {{ form.ids(class="form-control", placeholder="Insert uniprot IDs") }}
+            
+            {{ form.inputfile.label() }}
+            {{ form.inputfile(class="form-control", placeholder="Upload File") }}
+
+            {{ form.outputformat.label() }}
+            {{ form.outputformat(class="form-control", placeholder="Choose output format", rows=2, multiple=False) }}
+            </br>
+            <!--Submit button-->
+            {{ form.submit(class = "btn btn-lg btn-block btn-primary") }}
+        </form>
+    </div>
+</body>
+{% endblock %}
