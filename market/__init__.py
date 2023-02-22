@@ -14,6 +14,7 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['SECRET_KEY'] = '34d60585b853a486c59090bf'
 db = SQLAlchemy(app) # Call the database variable
 app.app_context().push() # Needed to modify the db
-app.config['UPLOAD_FOLDER'] = '/uploads'
+app.config['UPLOAD_FOLDER'] = './'
+app.config['ALLOWED_EXTENSIONS'] = set(['*.fa', '*.fasta'])
 
 from market import routes # Import routes (from the routes file)
