@@ -1,7 +1,7 @@
 <!--Inherit base template-->
 {% extends "base.html" %}
 {% block title %}
-Register Page
+ClustalO
 {% endblock %}
 
 {% block content %}
@@ -13,8 +13,6 @@ Register Page
         <form method="POST" class="form-register" style="color:black" enctype="multipart/form-data" >
             <!--Protect information from the form when it is being sent-->
             {{ form.hidden_tag() }}
-            <!--Add logo image-->
-            <img class="mb-4" src="assets/clustal.png" alt="">
             <!--Form header-->
             <h2 class="h3 mb-3 font-weight-normal">
                 Please provide the sequences you wish to analyze

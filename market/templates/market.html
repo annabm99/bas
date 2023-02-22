@@ -1,41 +1,16 @@
+<!--Inherit base template-->
 {% extends "base.html" %}
-
 {% block title %}
-Market
+Job Finished
 {% endblock %}
 
-
 {% block content %}
-
-    <!--Table hover: when you put the mouse on one row of the table it changes color-->
-    <!--Dark: if not present the table has white background-->
-    <table class="table table-hover table-dark">
-        <thead>                                 
-            <tr>
-                <!-- Column headers (bold) -->
-                <th scope="col">ID</th> <!-- First column: ID -->
-                <th scope="col">Name</th> <!--  column: Name -->
-                <th scope="col">Barcode</th> <!-- column: Barcode -->
-                <th scope="col">Options</th> <!--Third column: options for buttons, if there is no header the table works anyways-->
-            </tr>
-        </thead>
-        <tbody>
-            <!-- Rows -->
-            <!--Jinja template uses brackets with % instead of double brackets to access a logical, you can write code similar to python code-->
-            {% for item in items %} <!--For each element of the list-->
-                <tr>
-                    <td>{{ item.id }}</td> <!--1st dict value will go to the 1sr col)-->
-                    <!--The $$$$ added at the end (outside jinja code) will be displayed as normal text after the dict item-->
-                    <td>{{ item.name }}</td> <!--1st dict value will go to the 1sr col)-->
-                    <td>{{ item.barcode }}</td> <!--2nd dict value will go the the 2nd col)-->
-                    <td>
-                        <!--2 additional buttons for each row (3rd and 4th column)-->
-                        <button class="btn btn-outline btn-info">More Info</button> <!--Button info: differnet colour than botton success-->
-                        <button class="btn btn-outline btn-success">Purchase this Item</button>
-                    </td>
-                </tr>
-            {% endfor %} <!--Close the for loop-->
-        </tbody>
-    </table>
-
+<body class="text-left">
+    <h2>Here is the output of your ClustalO alignment:</h2>
+    <div class="text-center">
+        <textarea rows="20" cols="100">   
+            {{ content }}
+         </textarea>
+    </div>
+</body>
 {% endblock %}
