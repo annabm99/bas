@@ -52,9 +52,3 @@ def clustal_app():
             flash(f"There was an error in creating the user: {err_msg}")
     # Display fields of the form, through register.html file
     return render_template("clustalo.html", form=form)
-
-@app.route("/clustalo/output")
-def clustal_done():
-    with open ("outfile", "r") as f:
-        content = f.read()
-    return render_template('market.html', content=content)

@@ -5,19 +5,20 @@ ClustalO
 {% endblock %}
 
 {% block content %}
-<h1 class="text-left">Clustal Omega</h1>
+
 <body class="text-center">
     <!--class container so the objects do not fill the whole screen-->
-    <div class = "container">
+    <div class = "container" style="padding-top: 120px;">
+        <h1 style="color: darkgray; text-align: left;">Clustal Omega</h1>
         <img src="{{url_for('static', filename='assets/clustal.png')}}" />
         <!--method to post because users can provide information through this. Enctype allows file upload-->
         <form method="POST" class="form-register" style="color:black" enctype="multipart/form-data" >
             <!--Protect information from the form when it is being sent-->
             {{ form.hidden_tag() }}
             <!--Form header-->
-            <h2 class="h3 mb-3 font-weight-normal">
+            <h3 style = "color: darkgray; padding-top: 30px">
                 Please provide the sequences you wish to analyze
-            </h2>
+            </h3>
             <br>
             <!--Fields of the form-->
             {{ form.sequences.label() }}
