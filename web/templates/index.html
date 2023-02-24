@@ -10,11 +10,11 @@ Home Page
             <div class="container">
                 <div class="masthead-heading">Welcome to my website!</div>
                 <div class="masthead-subheading">Here you'll find my homework and other interesting stuff</div>
-                <a class="btn btn-primary btn-xl text-uppercase" color="red" href="#services">Get started</a>
+                <a class="btn btn-primary btn-xl text-uppercase" href="#start">Get started</a>
             </div>
         </header>
         <!-- Services-->
-        <section class="page-section" id="services">
+        <section class="page-section" id="start">
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Choose!</h2>
@@ -23,141 +23,122 @@ Home Page
                 <div class="row text-center">
                     <div class="col-md-4">
                         <span class="fa-stack fa-4x">
+                            <a class="btn-social" href="#music">
+                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-headphones fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <h4 class="my-3">Music gallery</h4>
+                        <p class="text-muted">A collection of some of my favourite playlists for every mood </p>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <a class="btn-social" href="#gallery">
                             <i class="fas fa-circle fa-stack-2x text-primary"></i>
                             <i class="fas fa-camera fa-stack-1x"></i>
+                            </a>
                         </span>
-                        <h4 class="my-3">Wildlife gallery</h4>
+                        <h4 class="my-3">Photo gallery</h4>
                         <p class="text-muted">A collection of some of my favourite pictures</p>
                     </div>
                     <div class="col-md-4">
                         <span class="fa-stack fa-4x">
+                            <a class="btn-social" href="#hwork">
                             <i class="fas fa-circle fa-stack-2x text-primary"></i>
                             <i class="fas fa-frown fa-stack-1x"></i>
+                            </a>
                         </span>
                         <h4 class="my-3">My homework</h4>
                         <p class="text-muted">All my homework for the Databases and Web Design course</p>
                     </div>
-                    <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-headphones fa-stack-1x"></i>
-                        </span>
-                        <h4 class="my-3">My music gallery</h4>
-                        <p class="text-muted">A collection of my favourite music playlists </pclass>
-                    </div>
                 </div>
             </div>
         </section>
-        <!-- Portfolio Grid-->
-        <section class="page-section bg-light" id="portfolio">
+        <!-- Playlists Grid-->
+        <section class="page-section" style="background-color:lightgrey" id="music">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Portfolio</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h2 class="section-heading text-uppercase" style = "color:black">Mood Playlists</h2>
+                    <h3 class="section-subheading text-muted">Choose today's mood and see how it sounds.</h3>
                 </div>
                 <div class="row">
                     <div class="col-lg-4 col-sm-6 mb-4">
-                        <!-- Portfolio item 1-->
                         <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/portfolio/1.jpg" alt="..." />
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#sad">
+                                <img class="img-fluid" style="border-radius: 10px" src="{{url_for('static', filename='assets/img/music/sad.png') }}" alt="..." />
                             </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Threads</div>
-                                <div class="portfolio-caption-subheading text-muted">Illustration</div>
-                            </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-sm-6 mb-4">
-                        <!-- Portfolio item 2-->
                         <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/portfolio/2.jpg" alt="..." />
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#blin">
+                                <img class="img-fluid" style="border-radius: 10px" src="{{url_for('static', filename='assets/img/music/blin.png') }}" alt="..." />
                             </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Explore</div>
-                                <div class="portfolio-caption-subheading text-muted">Graphic Design</div>
-                            </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-sm-6 mb-4">
-                        <!-- Portfolio item 3-->
                         <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/portfolio/3.jpg" alt="..." />
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#home">
+                                <img class="img-fluid" style="border-radius: 10px" src="{{url_for('static', filename='assets/img/music/home.png') }}" alt="..." />
                             </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Finish</div>
-                                <div class="portfolio-caption-subheading text-muted">Identity</div>
-                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
-                        <!-- Portfolio item 4-->
+                    <div class="col-lg-4 col-sm-6 mb-4">
                         <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/portfolio/4.jpg" alt="..." />
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#leaf">
+                                <img class="img-fluid" style="border-radius: 10px" src="{{url_for('static', filename='assets/img/music/leaf.png') }}" alt="..." />
                             </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Lines</div>
-                                <div class="portfolio-caption-subheading text-muted">Branding</div>
-                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
-                        <!-- Portfolio item 5-->
+                    <div class="col-lg-4 col-sm-6 mb-4">
                         <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal5">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/portfolio/5.jpg" alt="..." />
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#dance">
+                                <img class="img-fluid" style="border-radius: 10px" src="{{url_for('static', filename='assets/img/music/dance.png') }}" alt="..." />
                             </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Southwest</div>
-                                <div class="portfolio-caption-subheading text-muted">Website Design</div>
-                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <!-- Portfolio item 6-->
+                    <div class="col-lg-4 col-sm-6 mb-4">
                         <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal6">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/portfolio/6.jpg" alt="..." />
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#energy">
+                                <img class="img-fluid" style="border-radius: 10px" src="{{url_for('static', filename='assets/img/music/energy.png') }}" alt="..." />
                             </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Window</div>
-                                <div class="portfolio-caption-subheading text-muted">Photography</div>
-                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#tb">
+                                <img class="img-fluid" style="border-radius: 10px" src="{{url_for('static', filename='assets/img/music/tb.png') }}" alt="..." />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#heart">
+                                <img class="img-fluid" style="border-radius: 10px" src="{{url_for('static', filename='assets/img/music/heart.png') }}" alt="..." />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#mdlr">
+                                <img class="img-fluid" style="border-radius: 10px" src="{{url_for('static', filename='assets/img/music/mdlr.png') }}" alt="..." />
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
         <!-- About-->
-        <section class="page-section" id="about">
+        <section class="page-section" id="gallery">
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
             <meta name="viewport" content="width=device-width, initial-scale=1">
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.css">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Photo Gallery</h2>
-                    <h3 class="section-subheading text-muted">This is a collection of pictures taken in September of 2019 in the Masai Mara National Reserve, in Kenya.</h3>
+                    <h2 class="section-heading text-uppercase">Pole Pole</h2>
+                    <h3 class="section-subheading text-muted">This is a collection of pictures taken in September of 2019 in the Masai Mara National Reserve, in Kenya.
+                        The collection is called Pole Pole, a saying often used by the Masai. An accurate translation would be the spanish expression "sin prisa pero sin pausa".
+                    </h3>
                 </div>
                 <div class="container-fluid">
                     <div class="row gallery">
@@ -276,68 +257,44 @@ Home Page
             </div>
         </section>
         <!-- Team-->
-        <section class="page-section bg-light" id="team">
+
+        <section class="page-section bg-light" id="hwork">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Our Amazing Team</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h2 class="section-heading text-uppercase" style="color: black">My Homework</h2>
+                    <h3 class="section-subheading text-muted">If you click on any of the options, you will be redirected to a new page where the homework is posted.</h3>
                 </div>
                 <div class="row">
                     <div class="col-lg-4">
-                        <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="assets/img/team/1.jpg" alt="..." />
-                            <h4>Parveen Anand</h4>
-                            <p class="text-muted">Lead Designer</p>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Twitter Profile"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Facebook Profile"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                        <div class="team-member" style="padding-top: 90px;">
+                                <a class="btn-social" href="{{ url_for('data_model') }}">
+                                    <img class="mx-auto rounded-circle" src="{{url_for('static', filename='assets/img/hw/datmodel.png') }}" alt="..." />
+                                </a>
+                            <h4 style="color: darkgray">GWAS Data Model</h4>
+                            <p class="text-muted">See how a GWAS database would be organized.</p>
                         </div>
                     </div>
                     <div class="col-lg-4">
-                        <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="assets/img/team/2.jpg" alt="..." />
-                            <h4>Diana Petersen</h4>
-                            <p class="text-muted">Lead Marketer</p>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen Twitter Profile"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen Facebook Profile"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                        <div class="team-member" style="padding-top: 90px;">
+                                <a class="btn-social" href="{{ url_for('clustal_app') }}">
+                                    <img class="mx-auto rounded-circle" src="{{url_for('static', filename='assets/img/hw/dna.png') }}" alt="..." />
+                                </a>
+                            <h4 style="color: darkgray">Clustal Omega App</h4>
+                            <p class="text-muted">Align multiple sequences.</p>
                         </div>
                     </div>
-                    <div class="col-lg-4">
-                        <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="assets/img/team/3.jpg" alt="..." />
-                            <h4>Larry Parker</h4>
-                            <p class="text-muted">Lead Developer</p>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker Twitter Profile"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker Facebook Profile"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                        <div class="col-lg-4">
+                            <div class="team-member" style="padding-top: 90px;">
+                                    <a class="btn-social" href="{{ url_for('wikipop') }}">
+                                        <img class="mx-auto rounded-circle" src="{{url_for('static', filename='assets/img/hw/pop.png') }}" alt="..." />
+                                    </a>
+                                <h4 style="color: darkgray">WikiPop App</h4>
+                                <p class="text-muted">See how popular any word is in Wikipedia.</p>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-8 mx-auto text-center"><p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p></div>
-                </div>
+
             </div>
         </section>
-        <!-- Clients-->
-        <div class="py-5">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="{{url_for('static', filename='assets/img/logos/microsoft.svg')}}" alt="..." aria-label="Microsoft Logo" /></a>
-                    </div>
-                    <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="{{url_for('static', filename='assets/img/logos/google.svg')}}" alt="..." aria-label="Google Logo" /></a>
-                    </div>
-                    <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="{{url_for('static', filename='assets/img/logos/facebook.svg')}}" alt="..." aria-label="Facebook Logo" /></a>
-                    </div>
-                    <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="{{url_for('static', filename='assets/img/logos/ibm.svg')}}" alt="..." aria-label="IBM Logo" /></a>
-                    </div>
-                </div>
-            </div>
-        </div>
         <!-- Contact-->
         <section class="page-section" id="contact">
             <div class="container">
@@ -419,9 +376,8 @@ Home Page
                 </div>
             </div>
         </footer>
-        <!-- Portfolio Modals-->
         <!-- Portfolio item 1 modal popup-->
-        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="portfolio-modal modal fade" id="sad" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
@@ -429,25 +385,9 @@ Home Page
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
                                 <div class="modal-body">
+                                    <h2 class="text-uppercase" style="color:black">Gloomy</h2>
                                     <!-- Project details-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/1.jpg" alt="..." />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>
-                                            <strong>Client:</strong>
-                                            Threads
-                                        </li>
-                                        <li>
-                                            <strong>Category:</strong>
-                                            Illustration
-                                        </li>
-                                    </ul>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Close Project
-                                    </button>
+                                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/2WgOjdCqAIvLpYOXwt8W4y?utm_source=generator&theme=0" width="100%" height="500" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
                                 </div>
                             </div>
                         </div>
@@ -455,8 +395,7 @@ Home Page
                 </div>
             </div>
         </div>
-        <!-- Portfolio item 2 modal popup-->
-        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="portfolio-modal modal fade" id="energy" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
@@ -464,34 +403,16 @@ Home Page
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
                                 <div class="modal-body">
+                                    <h2 class="text-uppercase" style="color:black">Energetic</h2>
                                     <!-- Project details-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/2.jpg" alt="..." />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>
-                                            <strong>Client:</strong>
-                                            Explore
-                                        </li>
-                                        <li>
-                                            <strong>Category:</strong>
-                                            Graphic Design
-                                        </li>
-                                    </ul>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Close Project
-                                    </button>
-                                </div>
+                                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/3NGoLJ26bHKz5YxzMPcEhL?utm_source=generator&theme=0" width="100%" height="500" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Portfolio item 3 modal popup-->
-        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="portfolio-modal modal fade" id="blin" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
@@ -499,34 +420,16 @@ Home Page
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
                                 <div class="modal-body">
+                                    <h2 class="text-uppercase" style="color:black">Bling</h2>
                                     <!-- Project details-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/3.jpg" alt="..." />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>
-                                            <strong>Client:</strong>
-                                            Finish
-                                        </li>
-                                        <li>
-                                            <strong>Category:</strong>
-                                            Identity
-                                        </li>
-                                    </ul>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Close Project
-                                    </button>
-                                </div>
+                                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/5eFuRWBrOzCYSGo3jy9Pp7?utm_source=generator&theme=0" width="100%" height="500" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>                            </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Portfolio item 4 modal popup-->
-        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="portfolio-modal modal fade" id="leaf" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
@@ -534,34 +437,16 @@ Home Page
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
                                 <div class="modal-body">
+                                    <h2 class="text-uppercase" style="color:black">chill</h2>
                                     <!-- Project details-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/4.jpg" alt="..." />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>
-                                            <strong>Client:</strong>
-                                            Lines
-                                        </li>
-                                        <li>
-                                            <strong>Category:</strong>
-                                            Branding
-                                        </li>
-                                    </ul>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Close Project
-                                    </button>
-                                </div>
+                                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/1Q1P4147z44IwfV6RzTpMo?utm_source=generator&theme=0" width="100%" height="500" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>                            </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Portfolio item 5 modal popup-->
-        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="portfolio-modal modal fade" id="home" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
@@ -569,34 +454,16 @@ Home Page
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
                                 <div class="modal-body">
+                                    <h2 class="text-uppercase" style="color:black">homesick</h2>
                                     <!-- Project details-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/5.jpg" alt="..." />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>
-                                            <strong>Client:</strong>
-                                            Southwest
-                                        </li>
-                                        <li>
-                                            <strong>Category:</strong>
-                                            Website Design
-                                        </li>
-                                    </ul>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Close Project
-                                    </button>
-                                </div>
+                                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/1MuXu5A1b2M6TqjS4rlkUW?utm_source=generator&theme=0" width="100%" height="500" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>                            </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Portfolio item 6 modal popup-->
-        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="portfolio-modal modal fade" id="dance" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
@@ -604,26 +471,77 @@ Home Page
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
                                 <div class="modal-body">
+                                    <h2 class="text-uppercase" style="color:black">going out</h2>
                                     <!-- Project details-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/6.jpg" alt="..." />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>
-                                            <strong>Client:</strong>
-                                            Window
-                                        </li>
-                                        <li>
-                                            <strong>Category:</strong>
-                                            Photography
-                                        </li>
-                                    </ul>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Close Project
-                                    </button>
-                                </div>
+                                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/0h9VE2Qlnb8bTO0yEsDG1s?utm_source=generator&theme=0" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>                            </div>
+                            </div>
+                        </div>      
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-modal modal fade" id="mdlr" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <h2 class="text-uppercase" style="color:black">street</h2>
+                                    <!-- Project details-->
+                                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/2LBtm1Y4PgssTOBp6lJ7iG?utm_source=generator&theme=0" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-modal modal fade" id="heart" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <h2 class="text-uppercase" style="color:black">plenty</h2>
+                                    <!-- Project details-->
+                                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/4H6I0OOTIxFzru428m7EyV?utm_source=generator&theme=0" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-modal modal fade" id="tb" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <h2 class="text-uppercase" style="color:black">throwback</h2>
+                                    <!-- Project details-->
+                                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/60yMuwBaj9LFE7MJvbIRsX?utm_source=generator&theme=0" width="100%" height="500" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-modal modal fade" id="jkl" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <h2 class="text-uppercase" style="color:black">throwback</h2>
+                                    <!-- Project details-->
+                                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/2LBtm1Y4PgssTOBp6lJ7iG?utm_source=generator&theme=0" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>                            </div>
                             </div>
                         </div>
                     </div>

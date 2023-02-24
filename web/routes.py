@@ -52,3 +52,11 @@ def clustal_app():
             flash(f"There was an error in creating the user: {err_msg}")
     # Display fields of the form, through register.html file
     return render_template("clustalo.html", form=form)
+
+@app.route("/datamodel")
+def data_model():
+    return render_template("datamodel.html")
+
+@app.route("/wikipop")
+def wikipop():
+    return render_template("wikipop.html")
