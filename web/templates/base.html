@@ -44,23 +44,23 @@
         </div>
     </nav>
     <!--Flash error messages to users. Categories is for better display. -->
-      {% with messages = get_flashed_messages(with_categories=true) %}
-      <!--check if there are messages-->
-        {% if messages %}
-      <!--go through all messages (could be more than 1)-->
-          {% for category, message in messages %}
-            <!--Module output with category danger (there is a bootstrap class named danger)-->
-            <div class="alert alert-{{ category }}">
-              <!--Button to close alert-->
-              <button type="button" class="m1-2 mb-1 close" data-dismiss="alert" aria-label="Close">
-                <!--Close button (x): the aria things are for the button's behaviour-->
-                <span aria-hidden="true">&times;</span>
-              </button>
-              {{ message }}
-            </div>
-          {% endfor %}
-        {% endif %}
-      {% endwith %}
+    {% with messages = get_flashed_messages(with_categories=true) %}
+    <!--check if there are messages-->
+      {% if messages %}
+    <!--go through all messages (could be more than 1)-->
+        {% for category, message in messages %}
+          <!--Module output with category danger (there is a bootstrap class named danger)-->
+          <div class="alert alert-{{ category }}">
+            <!--Button to close alert-->
+            <button type="button" class="m1-2 mb-1 close" data-dismiss="alert" aria-label="Close">
+              <!--Close button (x): the aria things are for the button's behaviour-->
+              <span aria-hidden="true">&times;</span>
+            </button>
+            {{ message }}
+          </div>
+        {% endfor %}
+      {% endif %}
+    {% endwith %}
     <!--inside block content we will write all the body content of each page-->
       {% block content %}
 

@@ -1,0 +1,18 @@
+<!--Inherit base template-->
+{% extends "base.html" %}
+{% block title %}
+Job Finished
+{% endblock %}
+
+{% block content %}
+<body class="text-left" style="padding-top: 130px">
+    <div class="container">
+        <h2 style="color:darkgray">Here is the output of your ClustalO alignment:</h2>
+        <div class="text-center">
+            <textarea rows="20" cols="100">   
+                {{ content }}
+             </textarea>
+        </div>
+    </div>
+</body>
+{% endblock %}

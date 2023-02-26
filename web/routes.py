@@ -7,27 +7,12 @@ from werkzeug.utils import secure_filename
 import os
 from web import process
 
+
 # HOMEPAGE
 @app.route("/") # Root url
 @app.route("/home") # Root url
 def home_page():
     return render_template("index.html") # Flask function that redirects to html file (it has to be imported previously)
-
-@app.route("/photogallery")
-def photo_gallery():
-    return render_template('photo.html')
-
-
-# DYNAMIC ROUTE
-@app.route("/about/<username>")
-def about_page(username):
-    return f"<h1>This is the about page of {username}</h1>"
-
-@app.route("/input")
-def input_page():
-    name = "Anna"
-    return render_template('input.html', item=name)
-    # Whatever is put into name will be sent to the html jinja, and it will be displayed on the webpage
 
 @app.route("/clustalo", methods=["GET", "POST"]) # This route can support get and post requests
 def clustal_app():
@@ -52,6 +37,12 @@ def clustal_app():
             flash(f"There was an error in creating the user: {err_msg}")
     # Display fields of the form, through register.html file
     return render_template("clustalo.html", form=form)
+
+@app.route("/clustalo/output")
+def clustal_done():
+    with open ("outfile", "r") as f:
+        content = f.read()
+    return render_template('done.html', content=content)
 
 @app.route("/datamodel")
 def data_model():

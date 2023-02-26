@@ -1,3 +1,4 @@
+
 ### PROCESS PASTED SEQUENCES
 def process_sequences(sequence_string, clustal_input_file = "input.fasta"):
     with open (clustal_input_file, "w") as fd:

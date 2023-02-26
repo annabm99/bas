@@ -3032,13 +3032,13 @@ textarea.form-control-lg {
 
 .btn-primary {
   color: #fff;
-  background-color:#e48bb8;
-  border-color:#803a5d;
+  background-color:#6610f2;
+  border-color: #6f42c1;
 }
 .btn-primary:hover {
   color: #fff;
-  background-color: #0baccc;
-  border-color: #066173;
+  background-color: #e48bb8;
+  border-color: #803a5d;
 }
 .btn-check:focus + .btn-primary, .btn-primary:focus {
   color: #fff;
@@ -11802,3 +11802,4 @@ section#contact form#contactForm :-ms-input-placeholder {
   padding: 10px;
 
 }
+
