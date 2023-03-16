@@ -1,0 +1,21 @@
+name: u194046_personal
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+    - flask
+    - flask-wtf
+    - flask-login
+    - flask-sqlalchemy
+    - flask-bcrypt
+    - email_validator
+    - wikipedia
+    - pandas
+    - networkx
+    - matplotlib
+    - Werkzeug
+    - Biopython
+    - requests
+    - clustalo
+    - uwsgi
